@@ -11,7 +11,7 @@ function Filter() {
             <div className=' container mx-auto px-4 mt-5 '>
                 <div className="p-5 rounded-lg bg-gray-100 drop-shadow-xl border border-gray-200"
                     style={{
-                        backgroundColor: mode === 'dark' ? '#282c34' : '',
+                        backgroundColor: mode === 'dark' ? 'linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)' : '',
                         color: mode === 'dark' ? 'white' : '',
                     }}>
                     <div className="relative">

@@ -73,7 +73,7 @@ function Navbar() {
                     </Link>
                   </div> : ""}
 
-                  {user?.user?.email === "knupadhyay784@gmail.com" ? <div className="flow-root">
+                  {user?.user?.email === "adminboopathi@gmail.com" ? <div className="flow-root">
                     <Link to={'/dashboard'} className="-m-2 block p-2 font-medium text-gray-900" style={{ color: mode === 'dark' ? 'white' : '', }}>
                       admin
                     </Link>
@@ -115,10 +115,13 @@ function Navbar() {
       </Transition.Root>
 
       <header className="relative bg-white">
-        <p className="flex h-10 items-center justify-center bg-pink-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8" 
+
+      {/* Navbar para tag hided */}
+
+      {/*<p className="flex h-10 items-center justify-center bg-pink-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8" 
         style={{ backgroundColor: mode === 'dark' ? 'rgb(62 64 66)' : '', color: mode === 'dark' ? 'white' : '', }}>
           Get free delivery on orders over ₹300
-        </p>
+       </p>*/}
 
         <nav aria-label="Top" className="bg-gray-100 px-4 sm:px-6 lg:px-8 shadow-xl " style={{ backgroundColor: mode === 'dark' ? '#282c34' : '', color: mode === 'dark' ? 'white' : '', }}>
           <div className="">
@@ -139,7 +142,7 @@ function Navbar() {
               <div className="ml-4 flex lg:ml-0">
                 <Link to={'/'} className='flex'>
                   <div className="flex ">
-                    <h1 className=' text-2xl font-bold text-black  px-2 py-1 rounded' style={{ color: mode === 'dark' ? 'white' : '', }}>E-Bharat</h1>
+                    <h1 className=' text-2xl font-bold text-black  px-2 py-1 rounded' style={{ color: mode === 'dark' ? 'white' : '', }}>Zebronics</h1>
                   </div>
                 </Link>
               </div>
@@ -156,7 +159,7 @@ function Navbar() {
                       Signup
                     </Link>}
 
-                  {user?.user?.email === 'knupadhyay784@gmail.com' ? 
+                  {user?.user?.email === 'adminboopathi@gmail.com' ? 
                    <Link to={'/dashboard'} className="text-sm font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
                     Admin
                   </Link> : ""}
@@ -167,22 +170,12 @@ function Navbar() {
                   </a> : ""}
                 </div>
 
+              
                 <div className="hidden lg:ml-8 lg:flex">
                   <a href="#" className="flex items-center text-gray-700 ">
                     <img
-                      src="https://ecommerce-sk.vercel.app/img/indiaflag.png"
-                      alt=""
-                      className="block h-auto w-5 flex-shrink-0"
-                    />
-                    <span className="ml-3 block text-sm font-medium" style={{ color: mode === 'dark' ? 'white' : '', }}>INDIA</span>
-                  </a>
-                </div>
-                <div className="hidden lg:ml-8 lg:flex">
-                  <a href="#" className="flex items-center text-gray-700 ">
-                    <img
-                      className="inline-block w-10 h-10 rounded-full"
-                      src="https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg"
-                      alt="Dan_Abromov" />
+                      className="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%2Fimages%3Fk%3Dunknown%2Buser&psig=AOvVaw0hbE5bTZ0FXz4nhlIAtPPa&ust=1702901745582000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCJjLi7q5loMDFQAAAAAdAAAAABAE"
+                      />
                   </a>
                 </div>
 
@@ -209,6 +202,27 @@ function Navbar() {
                 </div>
               </div>
             </div>
+            <marquee behavior="scroll,alternate" direction="left" scrollamount="19" loop='1' className='flex gap-4 pr-2 justify-between uppercase'
+            
+            
+            style={{ backgroundColor: mode === 'dark' ? 'linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)' : '', color: mode === 'dark' ? '#fff' : '',}}>
+
+              <span className='ml-14'>Speakers</span>
+              <span className='ml-14'>Headphones</span>
+              <span className='ml-14'>Earphones</span>
+              <span className='ml-14'>LED TV</span>
+              <span className='ml-14'>LED Projectors</span>
+              <span className='ml-14'>Microphones</span>
+              <span className='ml-14'>Smart Watch</span>
+              <span className='ml-14'>Accessories</span>
+              <span className='ml-14'>Peripherals</span>
+              <span className='ml-14'>Smart Home</span>
+              <span className='ml-14'>Surveillance</span>
+              <span className='ml-14'>View All</span>
+              
+
+            </marquee>
+                      
           </div>
         </nav>
       </header>
@@ -217,3 +231,5 @@ function Navbar() {
 }
 
 export default Navbar
+
+
