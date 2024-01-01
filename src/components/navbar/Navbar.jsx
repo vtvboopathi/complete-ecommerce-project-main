@@ -25,7 +25,7 @@ function Navbar() {
   const cartItems = useSelector((state) => state.cart)
 
   return (
-    <div className='bg-white sticky top-0 z-50'>
+    <div className='bg-blue-600 sticky top-0 z-50'>
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
           <Transition.Child
@@ -50,7 +50,7 @@ function Navbar() {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl" style={{ backgroundColor: mode === 'dark' ? 'rgb(40, 44, 52)' : '', color: mode === 'dark' ? 'white' : '', }}>
+              <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-blue-600 pb-12 shadow-xl" style={{ backgroundColor: mode === 'dark' ? 'black' : '', color: mode === 'dark' ? 'white' : '', }}>
                 <div className="flex px-4 pb-2 pt-28">
                   <button
                     type="button"
@@ -116,14 +116,8 @@ function Navbar() {
 
       <header className="relative bg-white">
 
-      {/* Navbar para tag hided */}
 
-      {/*<p className="flex h-10 items-center justify-center bg-pink-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8" 
-        style={{ backgroundColor: mode === 'dark' ? 'rgb(62 64 66)' : '', color: mode === 'dark' ? 'white' : '', }}>
-          Get free delivery on orders over ₹300
-       </p>*/}
-
-        <nav aria-label="Top" className="bg-gray-100 px-4 sm:px-6 lg:px-8 shadow-xl " style={{ backgroundColor: mode === 'dark' ? '#282c34' : '', color: mode === 'dark' ? 'white' : '', }}>
+        <nav aria-label="Top" className="bg-orange-500 px-4 sm:px-6 lg:px-8 shadow-xl " style={{ backgroundColor: mode === 'dark' ? '	#ff9900' : '', color: mode === 'dark' ? 'white' : '', }}>
           <div className="">
             <div className="flex h-16 items-center">
               <button
@@ -205,7 +199,7 @@ function Navbar() {
             <marquee behavior="scroll,alternate" direction="left" scrollamount="19" loop='1' className='flex gap-4 pr-2 justify-between uppercase'
             
             
-            style={{ backgroundColor: mode === 'dark' ? 'linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)' : '', color: mode === 'dark' ? '#fff' : '',}}>
+            style={{ backgroundColor: mode === 'dark' ? '	#ff9900' : '', color: mode === 'dark' ? '#fff' : '',}}>
 
               <span className='ml-14'>Speakers</span>
               <span className='ml-14'>Headphones</span>
