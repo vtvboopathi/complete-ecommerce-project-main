@@ -56,7 +56,7 @@ function ProductInfo() {
     return (
         <Layout>
             <section className="text-orange-50 body-font overflow-hidden">
-                <div className="container px-5 py-10 mx-auto " >
+                <div className="container px-5 py-10 mx-auto bg-black">
                     {products && 
                     <div className="lg:w-4/5 mx-auto flex flex-wrap">
                         <img

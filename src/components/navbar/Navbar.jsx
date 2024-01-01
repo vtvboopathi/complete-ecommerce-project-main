@@ -1,11 +1,11 @@
 import React, { Fragment, useContext, useState } from 'react'
 import myContext from '../../context/data/myContext';
-import { BsFillCloudSunFill } from 'react-icons/bs'
-import { FiSun } from 'react-icons/fi'
+import { FaMoon } from "react-icons/fa";
+import { FaSun } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import { Dialog, Transition } from '@headlessui/react'
-import { RxCross2 } from 'react-icons/rx'
 import { useSelector } from 'react-redux';
+import { FaShoppingCart } from "react-icons/fa";
 
 function Navbar() {
   const context = useContext(myContext);
@@ -58,7 +58,7 @@ function Navbar() {
                     onClick={() => setOpen(false)}
                   >
                     <span className="sr-only">Close menu</span>
-                    <RxCross2 />
+                    <FaShoppingCart />
                   </button>
                 </div>
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
@@ -114,7 +114,7 @@ function Navbar() {
         </Dialog>
       </Transition.Root>
 
-      <header className="relative bg-white">
+      <header className="relative bg-white ">
 
 
         <nav aria-label="Top" className="bg-orange-500 px-4 sm:px-6 lg:px-8 shadow-xl " style={{ backgroundColor: mode === 'dark' ? '	#ff9900' : '#ff9900', color: mode === 'dark' ? 'white' : '', }}>
@@ -176,9 +176,9 @@ function Navbar() {
                 <div className="flex lg:ml-6">
                   <button className='' onClick={toggleMode}>
                     {mode === 'light' ?
-                      (<FiSun className='' size={30} />
+                      (<FaSun className='' size={30} />
                       ) : 'dark' ?
-                        (<BsFillCloudSunFill size={30} />
+                        (<FaMoon size={30} />
                         ) : ''}
                   </button>
                 </div>
