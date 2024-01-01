@@ -117,7 +117,7 @@ function Navbar() {
       <header className="relative bg-white">
 
 
-        <nav aria-label="Top" className="bg-orange-500 px-4 sm:px-6 lg:px-8 shadow-xl " style={{ backgroundColor: mode === 'dark' ? '	#ff9900' : '', color: mode === 'dark' ? 'white' : '', }}>
+        <nav aria-label="Top" className="bg-orange-500 px-4 sm:px-6 lg:px-8 shadow-xl " style={{ backgroundColor: mode === 'dark' ? '	#ff9900' : '#ff9900', color: mode === 'dark' ? 'white' : '', }}>
           <div className="">
             <div className="flex h-16 items-center">
               <button
@@ -136,7 +136,7 @@ function Navbar() {
               <div className="ml-4 flex lg:ml-0">
                 <Link to={'/'} className='flex'>
                   <div className="flex ">
-                    <h1 className=' text-2xl font-bold text-black  px-2 py-1 rounded' style={{ color: mode === 'dark' ? 'white' : '', }}>Zebronics</h1>
+                    <h1 className=' text-2xl font-bold text-black  px-2 py-1 rounded' style={{ color: mode === 'dark' ? 'white' : '', }}>ZEBRONICS</h1>
                   </div>
                 </Link>
               </div>

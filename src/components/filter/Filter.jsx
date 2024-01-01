@@ -8,10 +8,10 @@ function Filter() {
 
     return (
         <div>
-            <div className=' container mx-auto px-4 mt-5 '>
+            <div className='container mx-auto px-4 mt-5 ' style={{backgroundColor: mode === 'dark' ? 'black' : '#146eb4'}}>
                 <div className="p-5 rounded-lg bg-orange-500 drop-shadow-xl border border-gray-200"
                     style={{
-                        backgroundColor: mode === 'dark' ? 'linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)' : '',
+                        backgroundColor: mode === 'dark' ? '#ff9900' : '#ff9900',
                         color: mode === 'dark' ? 'white' : '',
                     }}>
                     <div className="relative">
