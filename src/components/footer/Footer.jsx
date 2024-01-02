@@ -53,7 +53,7 @@ function Footer() {
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <div id='feedback' className='flex items-center justify-center flex-col rounded-6 overflow-hidden'>
-                <textarea spellCheck='false' className='outline-none border-none resize-none mb-10 rounded-6 p-3' style={{backgroundColor: mode === 'dark' ? 'black' : '#146eb4', color: mode === 'dark' ? '#146eb4' : '#fff', borderRadius: '8px',  }} name="" id="" cols="40" rows="10"></textarea>
+                <textarea placeholder='Kindly Give Your Valuable Feedback...,' spellCheck='false' className='outline-none border-none resize-none mb-10 rounded-6 p-3' style={{backgroundColor: mode === 'dark' ? 'black' : '#146eb4', color: mode === 'dark' ? '#146eb4' : '#fff', borderRadius: '8px',  }} name="" id="" cols="40" rows="10"></textarea>
                 <button className='appearance-none bg-blue-600 border border-opacity-25 border-gray-300 hover:border-opacity-50 rounded-md shadow text-white cursor-pointer inline-block text-center text-sm font-semibold leading-5 px-4 py-2'>Send us your valuable feedback</button>
               </div>
             </div>

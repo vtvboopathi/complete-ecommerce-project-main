@@ -18,7 +18,7 @@ function Signup() {
     const signup = async () => {
         setLoading(true)
         if (name === "" || email === "" || password === "") {
-            return toast.error("All fields are required")
+            return toast.error("Kindly Fill The All Inputs")
         }
 
         try {
@@ -34,7 +34,7 @@ function Signup() {
             }
             const userRef = collection(fireDB, "users")
             await addDoc(userRef, user);
-            toast.success("Signup Succesfully")
+            toast.success("Signup Succesfully...,")
             setName("");
             setEmail("");
             setPassword("");
@@ -47,11 +47,13 @@ function Signup() {
     }
 
     return (
-        <div className=' flex justify-center items-center h-screen'>
+        <div className='' style={{backgroundImage: 'url(https://assets.justinmind.com/wp-content/webp-express/webp-images/uploads/2018/10/inspiration-login-forms-list-1024x655.png.webp)', backgroundSize: 'cover',
+        backgroundPosition: 'center', }}> 
+            <div className='flex justify-center items-center h-screen'>
             {loading && <Loader/>}
-            <div className=' bg-gray-800 px-10 py-10 rounded-xl '>
+            <div className=' bg-gray-800 px-10 py-10 rounded-xl text-center'>
                 <div className="">
-                    <h1 className='text-center text-white text-xl mb-4 font-bold'>Signup</h1>
+                    <h1 className='text-center text-white text-xl mb-4 font-bold '>Signup</h1>
                 </div>
                 <div>
                     <input type="text"
@@ -84,14 +86,18 @@ function Signup() {
                 <div className=' flex justify-center mb-3'>
                     <button
                         onClick={signup}
-                        className=' bg-red-500 w-full text-white font-bold  px-2 py-2 rounded-lg'>
+                        style={{backgroundColor: '#ff9900'}}
+                        className='w-full text-white font-bold  px-2 py-2 rounded-lg'>
                         Signup
                     </button>
                 </div>
                 <div>
-                    <h2 className='text-white'>Have an account <Link className=' text-red-500 font-bold' to={'/login'}>Login</Link></h2>
+                    <h2 className='text-white'>Already Have An Account <Link className=' text-red-500 font-bold' to={'/login'}>
+                        <button className='bg-blue-500 border border-transparent rounded-md shadow-sm text-white text-center text-sm font-medium px-3 py-2 inline-block align-middle whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'>Log In</button>   
+                    </Link></h2>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
